@@ -28,6 +28,11 @@
                     </li>
                 </ul>
             </nav>
+            <button type="button" class="mobile-menu-open js-open-menu">
+                <svg class="burger-menu-icon" width="32" height="22">
+                    <use href="./images/symbol-defs.svg#icon-menu-hamburger"></use>
+                </svg>
+            </button>
             <address class="address">
                 <ul class="list-remove-marker contact-details">
                     <li class="contact-info">
@@ -39,6 +44,70 @@
                 </ul>
             </address>
         </div>
+        <div class="mobile-menu js-menu-container">
+            <div class="container mobile-menu-container">
+                <button type="submit" class="close-modal-btn js-close-menu">
+                    <svg width="8" height="8">
+                        <use href="./images/symbol-defs.svg#icon-cross"></use>
+                    </svg>
+                </button>
+                <ul class="list-remove-marker mobile-nav">
+                    <li class="mobile-menu-list">
+                        <a href="" class="nav-link-mobile link">Studio</a>
+                    </li>
+                    <li class="mobile-menu-list">
+                        <a href="" class="nav-link-mobile link">Portfolio</a>
+                    </li>
+                    <li class="mobile-menu-list">
+                        <a href="" class="nav-link-mobile link">Contacts</a>
+                    </li>
+                </ul>
+                <div class="test">
+                    <address class="mobile-menu-address">
+                        <ul class="list-remove-marker mobile-address-list">
+                            <li class="address-list-for-mobile">
+                                <a href="mailto:info@devstudio.com" class="link mail-mobile">info@devstudio.com</a>
+                            </li>
+                            <li class="address-list-for-mobile">
+                                <a href="tel:+11(000)111-11-11" class="link tel-mobile">+11 (000) 111-11-11</a>
+                            </li>
+                        </ul>
+                    </address>
+                    <ul class="social-media-icon-list-mobile list-remove-marker">
+                        <li class="social-media-icon-list">
+                            <a href="" class="sm-icon" aria-label="Instagram">
+                                <svg class="social-icon-svg" width="24" height="24">
+                                    <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-media-icon-list">
+                            <a href="" class="sm-icon" aria-label="Twitter">
+                                <svg class="social-icon-svg" width="24" height="24">
+                                    <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-media-icon-list">
+                            <a href="" class="sm-icon" aria-label="Facebook">
+                                <svg class="social-icon-svg" width="24" height="24">
+                                    <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-media-icon-list">
+                            <a href="" class="sm-icon" aria-label="LinkedIn">
+                                <svg class="social-icon-svg" width="24" height="24">
+                                    <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        
     </header>
     <main>
         <section class="solutions-ad"> 
@@ -98,12 +167,11 @@
                             <label class="input-label-modal modal-checkbox" for="terms">I accept the terms and conditions of the <a class="privacy" href=""> Privacy Policy</a></label>
                         </div>
                         <button type="submit" class="order-service-btn form-send-btn">Send</button>
-
                     </form>
                 </div>
             </div>
         </section>
-        <section class="company-info">
+        <section class="company-info section">
             <div class="container">
                 <h2 class="hidden-element">Company Information</h2>
                 <ul class="list-remove-marker company-info-list gap">
@@ -155,13 +223,23 @@
                 <h2 class="section-title">What Are We Doing</h2>
                 <ul class="what-we-do-img-list list-remove-marker gap">
                     <li class="what-we-do-item">
-                        <img src="./images/monitor.jpg" alt="Computer monitor with statistics" width="360">
+                        <img 
+                            src="./images/monitor.jpg" 
+                            srcset="./images/monitor.jpg 1x,./images/monitor_2x.jpg 2x"
+                            alt="Computer monitor with statistics" width="360">
                     </li>
                     <li class="what-we-do-item">
-                        <img src="./images/phones.jpg" alt="Multiple screens interfaces" width="360">
+                        <img 
+                            src="./images/phones.jpg" 
+                            srcset="./images/phones.jpg 1x, ./images/phones_2x.jpg 2x"
+                            alt="Multiple screens interfaces" 
+                            width="360">
                     </li>
                     <li class="what-we-do-item">
-                        <img src="./images/laptop_and_phone.jpg" alt="Lapton and phone with the same image" width="360">
+                        <img 
+                            src="./images/laptop_and_phone.jpg" 
+                            srcset="./images/laptop_and_phone.jpg 1x,./images/laptop_and_phone_2x.jpg 2x"
+                            alt="Lapton and phone with the same image" width="360">
                     </li>
                 </ul>
             </div>
@@ -171,7 +249,11 @@
                 <h2 class="section-title">Our Team</h2>
                 <ul class="team-img-list list-remove-marker gap">
                     <li class="colleague-details">
-                        <img src="./images/mark.jpg" alt="Mark Guerroro" width="264">
+                        <img 
+                            srcset="./images/mark.jpg 1x, ./images/mark_2x.jpg 2x"
+                            src="./images/mark.jpg" 
+                            alt="Mark Guerroro" 
+                            width="264">
                         <div class="image-description">
                             <h3 class="suptitle">Mark Guerrero</h3>
                             <p>Product Designer</p>
@@ -208,7 +290,11 @@
                         </div>
                     </li>
                     <li class="colleague-details">
-                        <img src="./images/tom.jpg" alt="Tom Ford" width="264">
+                        <img 
+                            srcset="./images/tom.jpg 1x,./images/tom_2x.jpg 2x"
+                            src="./images/tom.jpg" 
+                            alt="Tom Ford" 
+                            width="264">
                         <div class="image-description">
                             <h3 class="suptitle">Tom Ford</h3>
                             <p>Frontend Developer</p>
@@ -245,7 +331,11 @@
                         </div>
                     </li>
                     <li class="colleague-details">
-                        <img src="./images/camila.jpg" alt="Camila Garcia" width="264">
+                        <img 
+                            srcset="./images/camila.jpg 1x,./images/camila_2x.jpg 2x"
+                            src="./images/camila.jpg" 
+                            alt="Camila Garcia" 
+                            width="264">
                         <div class="image-description">
                             <h3 class="suptitle">Camila Garcia</h3>
                             <p>Marketing</p>
@@ -282,7 +372,11 @@
                         </div>
                     </li>
                     <li class="colleague-details">
-                        <img src="./images/daniel.jpg" alt="Daniel Wilson" width="264">
+                        <img 
+                            srcset="./images/daniel.jpg 1x,./images/daniel_2x.jpg 2x"
+                            src="./images/daniel.jpg" 
+                            alt="Daniel Wilson" 
+                            width="264">
                         <div class="image-description">
                             <h3 class="suptitle">Daniel Wilson</h3>
                             <p>UI Designer</p>
@@ -323,7 +417,7 @@
         </section>
         <section class="customers section">
             <h2 class="section-title">Customers</h2>
-            <div class="container">
+            <div class="container container-adjusted-padding">
                 <ul class="client-list list-remove-marker">
                     <li class="company-client">
                         <a href="" class="client-link" aria-label="Company logo Ya and Co">
@@ -373,13 +467,13 @@
     </main>
 
     <footer class="footer-company-info">
-        <div class="container footer-info">
+        <div class="container footer-info container-adjusted-padding">
             <div class="about-company">
                 <a href="./index.html" target="_parent" class="link logo"><span class="logo-web">WEB</span>STUDIO</a>
                 <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
             </div>
             <div class="media-link-footer">
-                <h2 class="form-title">Social media</h2>
+                <p class="form-title">Social media</p>
                 <ul class="social-media-icon list-remove-marker">
                     <li class="social-media-icon-list">
                         <a href="" class="sm-icon sm-icon-footer" aria-label="Instagram">
@@ -412,7 +506,7 @@
                 </ul>
             </div>
             <form class="subscribe-form">
-                <label for="email-address" class="form-title">Subscribe</label>
+                <p for="email-address" class="form-title">Subscribe</p>
                 <div class="enter-info">
                     <input 
                     type="email" 
@@ -432,6 +526,8 @@
         </div>
     </footer>
 
-<script src="./modal.js"></script>
+<script src="./JS/mobile-menu.js"></script>
+<script src="./JS/modal.js"></script>
+
 </body>
 </html>
